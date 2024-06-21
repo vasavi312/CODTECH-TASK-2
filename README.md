@@ -2,7 +2,7 @@ Name: VARDIREDDY VASAVI
 Company: CODETECH IT SOLUTIONS
 Domain: PYTHON PROGRAMMING
 Duration: 15Th JUNE to 15TH JULY 2024
-Mentor:G.SRAVANI
+Mentor:SRAVANI GOUNI
 Internship ID:CT08DS2436
 Student Grade Tracker Project Overview
 1.Objective:
