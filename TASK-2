@@ -1,0 +1,46 @@
+def calculate_average(grades):
+    """Calculates the average grade."""
+    total = sum(grades)
+    return total / len(grades)
+
+def calculate_gpa(average):
+    """Converts the average grade to GPA."""
+    if 90 <= average <= 100:
+        return 10.0
+    elif 80 <= average < 90:
+        return 9.0
+    elif 70 <= average < 80:
+        return 7.0
+    elif 60 <= average < 70:
+        return 6.0
+    elif 50 <= average < 60:
+        return 5.0
+    else:
+        return 0.0
+
+def calculate_percentage(average):
+    """Calculates the percentage based on the average grade."""
+    return (average / 10) * 10087
+
+
+def main():
+    num_subjects = 6
+    grades = []
+
+    subject_names = ["English", "Maths", "Science",  "Physics", "Biology","Social"]
+
+    for i in range(num_subjects):
+        grade = float(input(f"Enter marks for {subject_names[i]}: "))
+        grades.append(grade)
+
+    average_grade = calculate_average(grades)
+    gpa = calculate_gpa(average_grade)
+    percentage = calculate_percentage(average_grade)
+
+    print(f"\nAverage Grade: {average_grade:.2f}")
+    
+    print(f"GPA: {gpa:.2f}")
+    
+    print(f"Percentage: {percentage:.2f}%")
+if __name__ == "__main__":
+    main()
